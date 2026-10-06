@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "relsgg"
 version = "1.0.0"
-description = "RelateAnything: real-time open-vocabulary relation prediction from any boxes or masks"
+description = "ThirdWheel: real-time open-vocabulary relation prediction from any boxes or masks"
 readme = "README.md"
-license = { file = "LICENSE" }
+license = { text = "AGPL-3.0" }
 requires-python = ">=3.12"
 # Pinned as compatible releases (~=) against the environment every released
 # checkpoint was trained and verified with (Python 3.13; numpy 2.5 needs 3.12+).
@@ -73,5 +73,5 @@ include = ["relsgg", "relsgg.*"]
 [tool.setuptools.package-data]
 relsgg = ["corpus_type_map.json"]
 
-[tool.uv.sources]
-pycocotools = { git = "https://github.com/Maelic/pycocotools" }
+# [tool.uv.sources]
+# pycocotools = { git = "https://github.com/Maelic/pycocotools" }
